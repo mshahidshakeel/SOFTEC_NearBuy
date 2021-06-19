@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusinessRegisterActivity">
+
+    <TextView
+        android:id="@+id/headerLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16sp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/register_business"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgBusinessRegister"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        android:layout_marginTop="16sp"
+        app:layout_constraintDimensionRatio="5:2"
+        android:src="@drawable/undraw_welcome_cats_thqn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLogin"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16sp"
+        app:layout_constraintTop_toBottomOf="@id/imgBusinessRegister">
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
